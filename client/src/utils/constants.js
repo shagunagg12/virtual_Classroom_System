@@ -6,18 +6,18 @@
 
 export const API_ENDPOINTS = {
   AUTH: {
-    REGISTER: '/auth/register',
-    LOGIN: '/auth/login',
-    ME: '/auth/me',
+    REGISTER: '/api/auth/register',
+    LOGIN: '/api/auth/login',
+    ME: '/api/auth/me',
   },
   SESSION: {
-    CREATE: '/session/create',
-    JOIN: '/session/join',
-    END: '/session/end',
-    LEAVE: '/session/leave',
-    GET: '/session', // Base path, append roomId
-    LIST: '/session/list',
-  },
+  CREATE: '/api/session/create',
+  JOIN: '/api/session/join',
+  END: '/api/session/end',
+  LEAVE: '/api/session/leave',
+  GET: '/api/session',
+  LIST: '/api/session/list',
+},
   // ZEGO token generation moved to frontend - no backend endpoint needed
 };
 

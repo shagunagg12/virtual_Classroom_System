@@ -101,7 +101,7 @@ export const SessionProvider = ({children}) => {
         try {
              setError(null);
              setLoading(true);
-      const response =await api.get('/session/list', {
+      const response =await api.get('/api/session/list', {
         params: {status}
       });
            const sessions = response.data.data.session;
